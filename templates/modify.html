@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>msg 수정폼</h1>
+    <form method="POST" action="/mod_msg?msg_id={{modify[0]}}">
+        <tr>
+        <div>
+           <tr>id :  <input type="text" name="msg_id" readonly="readonly" value="{{modify[0]}}"></tr>
+        </div>
+        <div>
+           <tr>text : <textarea name="msg_text" rows="3" cols="50">{{modify[1]}}</textarea></tr>
+        </div>
+    </tr>
+
+        <div>
+            <button TYPE="submit">MSG 입력</button>
+        </div>
+    </form>
+</body>
+</html>
